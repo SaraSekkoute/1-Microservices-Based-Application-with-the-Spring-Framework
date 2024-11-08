@@ -1,0 +1,15 @@
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: customer-service
+            #whithout Discovery
+            #uri: http://localhost:8081
+            #with discovery (gatway va contacter discovery pour recuperer l'adresse)
+          uri: lb://CUSTOMER-SERVICE
+          predicates:
+           Path=/api/customers/**
+        - id: product-service
+          uri: lb://INVENTORY-SERVICE
+          predicates:
+           Path=/api/products/**
