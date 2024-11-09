@@ -14,10 +14,10 @@ public class GatewayServiceApplication {
     public static void main(String[] args) {
         SpringApplication.run(GatewayServiceApplication.class, args);
     }
-
+    //To dynamically route requests to microservices instead of(a.yml)
     @Bean
-    DiscoveryClientRouteDefinitionLocator locator(ReactiveDiscoveryClient rfdc , DiscoveryLocatorProperties dlp)
-    {
-        return new DiscoveryClientRouteDefinitionLocator(rfdc,dlp);
+    DiscoveryClientRouteDefinitionLocator locator(
+        ReactiveDiscoveryClient rdc, DiscoveryLocatorProperties dlp){
+    return new DiscoveryClientRouteDefinitionLocator(rdc,dlp);
     }
 }
