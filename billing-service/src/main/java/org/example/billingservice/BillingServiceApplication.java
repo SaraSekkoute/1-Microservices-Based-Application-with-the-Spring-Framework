@@ -1,13 +1,13 @@
-package org.example.buillingservice;
+package org.example.billingservice;
 
-import org.example.buillingservice.entities.Bill;
-import org.example.buillingservice.entities.ProductItem;
-import org.example.buillingservice.feign.CustomerRestClient;
-import org.example.buillingservice.feign.ProductRestClient;
-import org.example.buillingservice.model.Customer;
-import org.example.buillingservice.model.Product;
-import org.example.buillingservice.repository.BillRepository;
-import org.example.buillingservice.repository.ProductItemRepository;
+import org.example.billingservice.entities.Bill;
+import org.example.billingservice.entities.ProductItem;
+import org.example.billingservice.feign.CustomerRestClient;
+import org.example.billingservice.feign.ProductRestClient;
+import org.example.billingservice.model.Customer;
+import org.example.billingservice.model.Product;
+import org.example.billingservice.repository.BillRepository;
+import org.example.billingservice.repository.ProductItemRepository;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -20,10 +20,10 @@ import java.util.Random;
 
 @SpringBootApplication
 @EnableFeignClients
-public class BuillingServiceApplication {
+public class BillingServiceApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(BuillingServiceApplication.class, args);
+        SpringApplication.run(BillingServiceApplication.class, args);
     }
 
 

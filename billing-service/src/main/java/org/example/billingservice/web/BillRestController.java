@@ -1,11 +1,11 @@
-package org.example.buillingservice.web;
+package org.example.billingservice.web;
 
-import org.example.buillingservice.entities.Bill;
-import org.example.buillingservice.feign.CustomerRestClient;
-import org.example.buillingservice.feign.ProductRestClient;
-import org.example.buillingservice.model.Product;
-import org.example.buillingservice.repository.BillRepository;
-import org.example.buillingservice.repository.ProductItemRepository;
+import org.example.billingservice.entities.Bill;
+import org.example.billingservice.feign.CustomerRestClient;
+import org.example.billingservice.feign.ProductRestClient;
+import org.example.billingservice.model.Product;
+import org.example.billingservice.repository.BillRepository;
+import org.example.billingservice.repository.ProductItemRepository;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;

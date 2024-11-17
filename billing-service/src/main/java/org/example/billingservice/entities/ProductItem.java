@@ -1,9 +1,9 @@
-package org.example.buillingservice.entities;
+package org.example.billingservice.entities;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.persistence.*;
 import lombok.*;
-import org.example.buillingservice.model.Product;
+import org.example.billingservice.model.Product;
 
 @Entity
 @Getter @Setter @NoArgsConstructor @AllArgsConstructor @Builder

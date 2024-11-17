@@ -1,8 +1,8 @@
-package org.example.buillingservice.entities;
+package org.example.billingservice.entities;
 
 import jakarta.persistence.*;
 import lombok.*;
-import org.example.buillingservice.model.Customer;
+import org.example.billingservice.model.Customer;
 
 import java.util.ArrayList;
 import java.util.Date;
