@@ -18,5 +18,6 @@ public class Bill {
     @OneToMany(mappedBy = "bill")//bidirectionnelle
     private List<ProductItem> productItems = new ArrayList<>();
 
-    @Transient private Customer customer;
+    @Transient
+    private Customer customer;
 }
